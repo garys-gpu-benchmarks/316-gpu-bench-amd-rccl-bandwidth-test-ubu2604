@@ -3,7 +3,7 @@
 **Main goal:** Measure single-GPU RCCL AllReduce bandwidth from a custom probe  
 **Tools:** Build src/rccl_perf.cpp and run bin/all_reduce_perf across the message-size sweep
 
-Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_140 · recorded 2026-11-13). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
+Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_141 · recorded 2026-11-14). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
 
 > Smoke runs use deliberately small sizes. They check that the workload installs and runs end to end; their numbers are not performance results. Baseline and extended are.
 
@@ -11,9 +11,9 @@ Reference results measured by the maintainer on the system shown in each section
 ## smoke
 
 - **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 26.04.1 LTS · kernel 7.0.0-38-generic · driver 7.1.9.31600000
-- **Run:** 2026-11-13T20:35:23Z · status **N/A-EXPECTED** (exit 0)
-- **Time (mm:ss):** setup 00:09 · benchmark 00:02 · whole run 00:18
-- **Source:** run 316_20261113_203523
+- **Run:** 2026-11-14T11:06:38Z · status **N/A-EXPECTED** (exit 0)
+- **Time (mm:ss):** setup 00:10 · benchmark 00:02 · whole run 00:18
+- **Source:** run 316_20261114_110638
 - **Command:** `bash run_benchmark.sh --smoke --num-gpus 1 --min-bytes 8 --max-bytes 1024 --step-factor 2 --warmup-iters 1 --num-iterations 2`
 
 | # | Metric | Result |
