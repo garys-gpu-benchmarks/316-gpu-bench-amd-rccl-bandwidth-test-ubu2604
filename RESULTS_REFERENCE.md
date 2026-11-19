@@ -3,17 +3,17 @@
 **Main goal:** Measure single-GPU RCCL AllReduce bandwidth from a custom probe  
 **Tools:** Build src/rccl_perf.cpp and run bin/all_reduce_perf across the message-size sweep
 
-Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_146 · recorded 2026-11-18). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
+Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_148 · recorded 2026-11-19). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
 
 > Smoke runs use deliberately small sizes. They check that the workload installs and runs end to end; their numbers are not performance results. Baseline and extended are.
 
 <!-- profile:smoke -->
 ## smoke
 
-- **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 26.04.1 LTS · kernel 7.0.0-38-generic · driver 7.1.9.31600000
-- **Run:** 2026-11-18T11:04:46Z · status **N/A-EXPECTED** (exit 0)
+- **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 26.04.1 LTS · kernel 7.0.0-43-generic · driver 7.1.9.31600000
+- **Run:** 2026-11-19T15:23:54Z · status **N/A-EXPECTED** (exit 0)
 - **Time (mm:ss):** setup 00:09 · benchmark 00:02 · whole run 00:17
-- **Source:** run 316_20261118_110446
+- **Source:** run 316_20261119_152354
 - **Command:** `bash run_benchmark.sh --smoke --num-gpus 1 --min-bytes 8 --max-bytes 1024 --step-factor 2 --warmup-iters 1 --num-iterations 2`
 
 | # | Metric | Result |
