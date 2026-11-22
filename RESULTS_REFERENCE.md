@@ -11,9 +11,9 @@ Reference results from the validation run on the system shown in each section (r
 ## smoke
 
 - **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 26.04.1 LTS · kernel 7.0.0-43-generic · driver 7.1.9.31600000
-- **Run:** 2026-11-22T11:00:01Z · status **N/A-EXPECTED** (exit 0)
-- **Time (mm:ss):** setup 00:08 · benchmark 00:02 · whole run 00:15
-- **Source:** run 316_20261122_110001
+- **Run:** 2026-11-22T14:31:53Z · status **N/A-EXPECTED** (exit 0)
+- **Time (mm:ss):** setup 00:09 · benchmark 00:02 · whole run 00:16
+- **Source:** run 316_20261122_143153
 - **Command:** `bash run_benchmark.sh --smoke --num-gpus 1 --min-bytes 8 --max-bytes 1024 --step-factor 2 --warmup-iters 1 --num-iterations 2`
 
 | # | Metric | Result |
